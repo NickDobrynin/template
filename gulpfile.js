@@ -1,18 +1,18 @@
-const gulp = require('gulp')
-del = require('del')
-webpack = require('webpack-stream')
-pug = require('gulp-pug')
-plumber = require('gulp-plumber')
-cached = require('gulp-cached')
-cache = require('gulp-cache')
-imagemin = require('gulp-imagemin')
-imgCompress = require('imagemin-jpeg-recompress')
-sourcemaps = require('gulp-sourcemaps')
-scss = require('gulp-sass')
-autoprefixer = require('gulp-autoprefixer')
-rename = require('gulp-rename')
-csso = require('gulp-csso')
-browserSync = require('browser-sync').create();
+const   gulp            = require('gulp')
+        del             = require('del')
+        webpack         = require('webpack-stream')
+        pug             = require('gulp-pug')
+        plumber         = require('gulp-plumber')
+        cached          = require('gulp-cached')
+        cache           = require('gulp-cache')
+        imagemin        = require('gulp-imagemin')
+        imgCompress     = require('imagemin-jpeg-recompress')
+        sourcemaps      = require('gulp-sourcemaps')
+        scss            = require('gulp-sass')
+        autoprefixer    = require('gulp-autoprefixer')
+        rename          = require('gulp-rename')
+        csso            = require('gulp-csso')
+        browserSync     = require('browser-sync').create();
 
 const
     path = {
