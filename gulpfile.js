@@ -48,7 +48,7 @@ gulp.task('js', () => {
     return gulp.src(path.scripts.input + 'all.js')
         .pipe(webpack({
             output: {
-                filename: 'all.js'
+                filename: 'all.min.js'
             },
             module: {
                 rules: [{
@@ -151,7 +151,7 @@ gulp.task('styles:build', () => {
 });
 
 gulp.task('styles:build-min', () => {
-    return gulp.src(path.scss.input + 'main.css')
+    return gulp.src(path.scss.input + 'main.scss')
         .pipe(scss())
         .pipe(autoprefixer({
             overrideBrowserlist: ['last 3 versions']

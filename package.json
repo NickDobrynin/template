@@ -33,6 +33,6 @@
     ],
     "dependencies": {
         "jquery": "^3.5.1",
-        "normalize": "^0.3.1"
+        "normalize.scss": "^0.1.0"
     }
 }
