@@ -25,7 +25,7 @@ const
             'output': './build/'
         },
         img: {
-            'input': './dev/img/**/*.{png,jpg,gif,svg,ico.webp}',
+            'input': './dev/img/**/*.{png,jpg,gif,svg,ico,webp}',
             'output': './build/img/'
         },
         scss: {
