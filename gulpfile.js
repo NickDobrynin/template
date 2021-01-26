@@ -1,6 +1,6 @@
 const   gulp            = require('gulp')
         del             = require('del')
-        webpack         = require('webpack-stream')
+        webpackStream   = require('webpack-stream')
         pug             = require('gulp-pug')
         plumber         = require('gulp-plumber')
         cached          = require('gulp-cached')
@@ -46,7 +46,7 @@ gulp.task('clean', () => {
 // Gulp Scripts Task
 gulp.task('js', () => {
     return gulp.src(path.scripts.input + 'all.js')
-        .pipe(webpack({
+        .pipe(webpackStream({
             output: {
                 filename: 'all.min.js'
             },
@@ -70,7 +70,7 @@ gulp.task('js', () => {
 });
 gulp.task('js:min', () => {
     return gulp.src(path.scripts.input + 'all.js')
-        .pipe(webpack({
+        .pipe(webpackStream({
             output: {
                 filename: 'all.min.js'
             },
