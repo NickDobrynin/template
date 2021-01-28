@@ -17,7 +17,8 @@ html(lang="ru-RU")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
 		<![endif]-->
 	body
-		include ../modules/header/header
-		block content
-		include ../modules/footer/footer
-	script(src="js/all.min.js")
+		.page
+			include ../modules/header/header
+			block content
+			include ../modules/footer/footer
+		script(src="js/all.min.js")
