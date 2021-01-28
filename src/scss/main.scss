@@ -3,11 +3,13 @@
 @import "utils/mixins";
 @import "utils/fonts";
 html {
-    font-size: $base-font-size;
+    font-size: $baseFontSize;
     height: 100%;
 }
 
 body {
+    color: $primaryColor;
+    background-color: $bgColor;
     height: 100%;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
@@ -85,7 +87,7 @@ button {
 
 .container {
     margin: 0 auto;
-    max-width: $content-size;
+    max-width: $contentSize;
     width: 100%;
 }
 

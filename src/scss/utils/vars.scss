@@ -1,9 +1,9 @@
 // Colors
-$white: #ffffff;
-$black: #000000;
+$primaryColor: #ffffff;
+$bgColor: #000000;
 
 // Sizes
-$base-font-size: 16px;
+$baseFontSize: 16px;
 
 $breakpoints: (
   "phone"       : 400px,
@@ -16,6 +16,6 @@ $breakpoints: (
   "desktop-wide": 1440px
 );
 
-$content-size: 1024px;
+$contentSize: 1024px;
 
 // Fonts
