@@ -17,23 +17,23 @@ const   gulp            = require('gulp')
 const
     path = {
         scripts: {
-            'input': './dev/js/',
+            'input': './src/js/',
             'output': './build/js/'
         },
         pug: {
-            'input': './dev/pug/*.pug',
+            'input': './src/pug/*.pug',
             'output': './build/'
         },
         img: {
-            'input': './dev/img/**/*.{png,jpg,gif,svg,ico,webp}',
+            'input': './src/img/**/*.{png,jpg,gif,svg,ico,webp}',
             'output': './build/img/'
         },
         scss: {
-            'input': './dev/scss/',
+            'input': './src/scss/',
             'output': './build/css/'
         },
         fonts: {
-            'input': './dev/fonts/**/*.*',
+            'input': './src/fonts/**/*.*',
             'output': './build/fonts/'
         }
     };
@@ -179,10 +179,10 @@ gulp.task('serve', () => {
 
 // Gulp Watch Task
 gulp.task('watch', () => {
-    gulp.watch('./dev/pug/**/*.pug', gulp.series('pug'));
-    gulp.watch('./dev/scss/**/*.scss', gulp.series('styles:dev'));
-    gulp.watch('./dev/img/**/*.{png,jpg,gif,svg,ico,webp}', gulp.series('img:dev'));
-    gulp.watch('./dev/js/**/*.js', gulp.series('js'));
+    gulp.watch('./src/pug/**/*.pug', gulp.series('pug'));
+    gulp.watch('./src/scss/**/*.scss', gulp.series('styles:dev'));
+    gulp.watch('./src/img/**/*.{png,jpg,gif,svg,ico,webp}', gulp.series('img:dev'));
+    gulp.watch('./src/js/**/*.js', gulp.series('js'));
 });
 
 // Gulp Dev Task
