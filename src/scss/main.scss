@@ -3,13 +3,14 @@
 @import "utils/mixins";
 @import "utils/fonts";
 html {
-    font-size: $baseFontSize;
+    font-size: 62.5%;
     height: 100%;
 }
 
 body {
     color: $textColor;
     background-color: $bgColor;
+    font-size: $baseFontSize;
     height: 100%;
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
